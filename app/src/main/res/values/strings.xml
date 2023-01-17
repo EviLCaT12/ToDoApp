@@ -4,4 +4,10 @@
     <string name="your_task">Your Task</string>
     <string name="your_task_will_go_here">your task will go here</string>
     <string name="priority_high">Priority - High</string>
+    <string name="to_do_application">To Do Application</string>
+    <string name="optimize_your_day">optimize your day</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
 </resources>

@@ -29,14 +29,17 @@
             android:backgroundTint="#FF5722"
             android:text="@string/x"
             android:textAllCaps="false"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black"/>
     </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            tools:listitem="@layout/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
         <Button
             android:id="@+id/add"

@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,5 +14,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CreateCard::class.java)
             startActivity(intent)
         }
+        deleteAll.setOnClickListener {
+            DataObject.deleteAll()
+        }
+
+        recycler_view.adapter = Adapter(DataObject.getAllData())
+        recycler_view.layoutManager = LinearLayoutManager(this)
     }
 }

@@ -3,8 +3,8 @@ package com.example.myapplication
 object DataObject {
     var listdata = mutableListOf<CardInfo>()
 
-    fun setData(title: String, priority: String) {
-        listdata.add(CardInfo(title, priority))
+    fun setData(title: String, description: String,priority: String) {
+        listdata.add(CardInfo(title, description,  priority))
     }
 
     fun getAllData(): List<CardInfo> {
@@ -23,9 +23,10 @@ object DataObject {
         listdata.removeAt(pos)
     }
 
-    fun updateData(pos:Int,title:String,priority:String)
+    fun updateData(pos:Int,title:String, description: String, priority:String)
     {
         listdata[pos].title=title
+        listdata[pos].description = description
         listdata[pos].priority=priority
     }
 

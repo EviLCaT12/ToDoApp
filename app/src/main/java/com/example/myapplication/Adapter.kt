@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.view.view.*
 class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolder>() {
     class viewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var title = itemView.title
+        var description = itemView.description
         var priority = itemView.priority
         var layout = itemView.mylayout
     }
@@ -28,6 +29,7 @@ class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolde
         }
 
         holder.title.text = data[position].title
+        holder.description.text = data[position].description
         holder.priority.text = data[position].priority
         holder.itemView.setOnClickListener{
             val intent= Intent(holder.itemView.context,UpdateCard::class.java)

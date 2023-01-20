@@ -13,4 +13,8 @@
     <string name="update_task">Update Task</string>
     <string name="update">Update</string>
     <string name="delete">Delete</string>
+    <string name="date">Date</string>
+    <string name="priority">Priority</string>
+    <string name="your_description_wiil_go_here">your description wiil go here</string>
+    <string name="high_medium_low">high/medium/low</string>
 </resources>

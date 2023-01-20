@@ -19,8 +19,10 @@ class UpdateCard : AppCompatActivity() {
         val pos = intent.getIntExtra("id", -1)
         if (pos != -1) {
             val title = DataObject.getData(pos).title
+            val description = DataObject.getData(pos).description
             val priority = DataObject.getData(pos).priority
             create_title.setText(title)
+            create_description.setText(description)
             create_priority.setText(priority)
 
             delete_button.setOnClickListener {
@@ -30,6 +32,7 @@ class UpdateCard : AppCompatActivity() {
                         Entity(
                             pos+1,
                             create_title.text.toString(),
+                            create_description.text.toString(),
                             create_priority.text.toString()
                         )
                     )
@@ -41,6 +44,7 @@ class UpdateCard : AppCompatActivity() {
                 DataObject.updateData(
                     pos,
                     create_title.text.toString(),
+                    create_description.text.toString(),
                     create_priority.text.toString()
                 )
                 GlobalScope.launch {
@@ -48,6 +52,7 @@ class UpdateCard : AppCompatActivity() {
                         Entity(
                             pos+1,
                             create_title.text.toString(),
+                            create_description.text.toString(),
                             create_priority.text.toString()
                         )
                     )

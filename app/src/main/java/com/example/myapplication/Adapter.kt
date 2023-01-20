@@ -22,8 +22,8 @@ class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolde
 
     override fun onBindViewHolder(holder: viewHolder, position: Int) {
         when (data[position].priority.toLowerCase()) {
-            "high" -> holder.layout.setBackgroundColor(Color.parseColor("#F05454"))
-            "medium" -> holder.layout.setBackgroundColor(Color.parseColor("#EDC988"))
+            "high" -> holder.layout.setBackgroundColor(Color.parseColor("#fa0202"))
+            "medium" -> holder.layout.setBackgroundColor(Color.parseColor("#c2bd30"))
             else -> holder.layout.setBackgroundColor(Color.parseColor("#00917C"))
         }
 

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="x">X</string>
-    <string name="your_task">Your Task</string>
+    <string name="your_task">Your Tasks</string>
     <string name="your_task_will_go_here">your task will go here</string>
     <string name="priority_high">Priority - High</string>
     <string name="to_do_application">To Do Application</string>

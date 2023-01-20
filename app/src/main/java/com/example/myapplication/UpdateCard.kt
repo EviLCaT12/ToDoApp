@@ -22,7 +22,11 @@ class UpdateCard : AppCompatActivity() {
             }
 
             update_button.setOnClickListener {
-                DataObject.updateData(pos, title, priority)
+                DataObject.updateData(
+                    pos,
+                    create_title.text.toString(),
+                    create_priority.text.toString()
+                )
                 myIntent()
             }
         }

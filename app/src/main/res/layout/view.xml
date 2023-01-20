@@ -40,6 +40,9 @@
                 android:text="@string/priority_high"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
+
+
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>
